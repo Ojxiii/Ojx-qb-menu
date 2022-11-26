@@ -1,0 +1,156 @@
+/* Nice font for button from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(251, 202, 25, 0.687);
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #171717e6;
+    border-radius: 10px;
+}
+#container {
+    position: absolute;
+    height: auto;
+    top: 20%;
+    right: 1.4%;
+    border-radius: 5px;
+    background: transparent !important;
+}
+.button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row !important;
+    gap: 10px;
+}
+
+#buttons {
+    max-height: 75vh;
+    width: 300px;
+    overflow-x: none;
+    overflow-y: auto;
+    padding: 10px;
+    animation: Jojo 0.7s;
+}
+
+html,
+body {
+    background: transparent !important;
+}
+
+.button {
+    border-color: rgb(0, 0, 0);
+    width: auto;
+    height: 10%;
+    background: rgba(16, 16, 16, 0.323);
+    color: white;
+    margin: auto;
+    position: relative;
+    top: 10%;
+    margin-top: 0.5rem;
+    overflow: hidden;
+    padding: 0.45rem;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 0rem 0rem 0.1rem 0.05rem #0000007c;
+}
+
+  
+.button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(251, 190, 21, 0.514),
+      transparent
+    );
+    transition: all 1500ms;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: left;
+}
+
+.disabled {
+    background: rgba(16, 16, 16, 0.731);
+    cursor: default;
+}
+  
+.button:hover:before {
+    left: 100%;
+}
+
+.title {
+    size: 200px;
+    font-style: italic;
+    font-size: 1.2rem;
+    font-weight: 100%;
+    width: 50%;
+    max-width: 45%;
+    height: 10%;
+    color: white;
+    margin: auto;
+    position: relative;
+    top: 10%;
+    margin-top: 0.5rem;
+    overflow: hidden;
+    padding: 0.45rem;
+    display: flex;
+    flex-direction: column;
+    left: -26%;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.345), 1px -1px 0 rgba(0, 0, 0, 0.345), -1px 1px 0 rgba(0, 0, 0, 0.345), 1px 1px 0 rgba(0, 0, 0, 0.345);
+}
+
+.title::after {
+    content:"";
+    position: absolute;
+    display: block;
+    left: 3px;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: aliceblue;
+}
+
+div > .text {
+    flex-direction: column;
+    font-size: 0.75rem;
+    overflow: hidden;
+}
+
+div > .header {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: left;
+    overflow: wrap;
+    color: white;
+    font-weight: 400;
+    overflow: hidden;
+}
